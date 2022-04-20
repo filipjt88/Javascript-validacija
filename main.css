@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    background-color: #eee;
+}
+
+form small {
+    position: absolute;
+    left: 60%;
+    margin-top: -60px;
+    margin-left: 20px;
+    visibility: hidden;
+}
+
+
+.form-group.success input {
+    border: 2px solid green;
+}
+
+.form-group.error input {
+    border: 2px solid red;
+}
+
+input::placeholder {
+    font-style: italic;
+    letter-spacing: 1px;
+}

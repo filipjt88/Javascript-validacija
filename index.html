@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" style="margin-top: 200px;">
+            <div class="col-md-6 offset-2">
+                <form action="#" id="form">
+                    <h1 class="text-center">JavaScript Validacija</h1>
+                    <div class="form-group">
+                        <label for="">Username:</label>
+                        <input type="text" name="username" class="form-control" id="username"
+                            placeholder="Username ..."><br>
+                        <small class="alert-danger p-1">Error message</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email:</label>
+                        <input type="text" name="email" class="form-control" id="email" placeholder="Email ..."><br>
+                        <small class="alert-danger p-1">Error message</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password:</label>
+                        <input type="password" name="password" class="form-control" id="password"
+                            placeholder="Password ..."><br>
+                        <small class="alert-danger p-1">Error message</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password confirm:</label>
+                        <input type="password" name="password_confirm" class="form-control" id="password_confirm"
+                            placeholder="Password confirm ..."><br>
+                        <small class="alert-danger p-1">Error message</small>
+                    </div>
+                    <button type="submit" class="btn btn-success form-control">Send</button>
+                    <div id="msg"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
